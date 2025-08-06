@@ -1,19 +1,46 @@
-
-
-
 import BG from '../assets/Hero-Churrasco.png';
 
 export default function Hero() {
   return (
     <section
-      className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black/20 to-transparent"
+      className="w-full h-full absolute inset-0"
       style={{ backgroundImage: `url(${BG})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
-     <div className='container mx-auto px-4'>
-        <a className='group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 font-medium text-white bg-transparent
-        text-sm font-display cursor-pointer
-        '>Início</a>
-     </div>
+      <div className="container mx-auto px-4 flex items-center justify-center gap-4">
+        <a className="group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 font-medium text-white bg-transparent text-sm font-display cursor-pointer transition-colors duration-300 hover:bg-white/20 hover:text-black">
+          Início
+        </a>
+        <a className="group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 font-medium text-white bg-transparent text-sm font-display cursor-pointer transition-colors duration-300  hover:bg-white/20 hover:text-black">
+          Sobre
+        </a>
+        <a className="group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 font-medium text-white bg-transparent text-sm font-display cursor-pointer transition-colors duration-300  hover:bg-white/20 hover:text-black">
+          Serviços
+        </a>
+        <a className="group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 font-medium text-white bg-transparent text-sm font-display cursor-pointer transition-colors duration-300  hover:bg-white/20 hover:text-black">
+          Galeria
+        </a>
+        <a className="group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 font-medium text-white bg-transparent text-sm font-display cursor-pointer transition-colors duration-300  hover:bg-white/20 hover:text-black">
+          Depoimento
+        </a>
+        <a className="group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 font-medium text-white bg-transparent text-sm font-display cursor-pointer transition-colors duration-300  hover:bg-white/20 hover:text-black">
+          Contato
+        </a>
+      </div>
+
+      <div className="absolute top-[55%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white px-6">
+        <h1 className="font-display font-black text-4xl md:text-5xl lg:text-6xl mb-6 animate-fade-in whitespace-nowrap">
+          Lino Churrasqueiro & Buffet
+        </h1>
+        <p className="text-xl md:text-2xl mb-8 animate-fade-in font-light">
+          Churrasco profissional para seu evento inesquecível!
+        </p>
+        <a className="inline-flex items-center justify-center px-6 py-3 rounded-2xl whitespace-nowrap font-medium bg-red-800 text-white cursor-pointer transform transition-transform duration-300 hover:scale-105">
+          Solicitar Orçamento
+        </a>
+
+      </div>
+
+
     </section>
   );
-}
+} 

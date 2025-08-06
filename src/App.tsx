@@ -1,12 +1,19 @@
+import About from "./components/About";
 import Hero from "./components/Hero";
 import "./index.css";
 
 function App() {
-  
-    <Hero />
+  return (
+    <>
+      <Hero />
+      <About />
+    </>
 
-   
-  
+  )
+
+
+
+
 }
 
 export default App;
