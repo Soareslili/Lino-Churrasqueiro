@@ -1,4 +1,5 @@
 import BG from '../assets/Hero-Churrasco.png';
+import Logo from '../assets/Logo-Lino.png'
 
 export default function Hero() {
   return (
@@ -13,6 +14,7 @@ export default function Hero() {
     >
 
       <div className="container mx-auto px-4 flex items-center justify-center gap-4">
+           <img src={Logo} alt="logo-Lino" className='w-32 h-32' />
         <a className="group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 font-medium text-white bg-transparent text-sm font-display cursor-pointer transition-colors duration-300 hover:bg-white/20 hover:text-black">
           Início
         </a>
@@ -34,6 +36,7 @@ export default function Hero() {
       </div>
 
       <div className="absolute top-[55%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white px-6">
+     
         <h1 className="font-display font-black text-4xl md:text-5xl lg:text-6xl mb-6 animate-fade-in whitespace-nowrap"
           data-aos="fade-up"
           data-aos-delay="0"
