@@ -1,25 +1,25 @@
-import { MessageCircle, MapPin, Instagram, Mail} from "lucide-react";
+import { MessageCircle, Mail, Instagram} from "lucide-react";
 import React from "react";
 
 type Item = {
   icon: React.ElementType;
   title: string;
-  desc: string;
   href?: string;
   aria: string;
   external?: boolean;
 };
 
-const EMAIL = "contato@seusite.com";
-const WHATSAPP = "https://wa.me/556899998899?text=Ol%C3%A1%20gostaria%20de%20um%20or%C3%A7amento";
-const MAP = "https://maps.google.com/?q=S%C3%A3o+Paulo";
-const INSTAGRAM = "https://instagram.com/seuusuario"; 
+
+const WHATSAPP = "https://api.whatsapp.com/send?phone=5511970833434&text=Ol%C3%A1%20Lino,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento.%20";
+const INSTAGRAM = "https://www.instagram.com/lino_churasqueiro?igsh=MXRnbGRuMXBkOXMzMQ=="; 
+const EMAIL = "mailto:js67824662@gmail.com?subject=Orçamento%20de%20Buffet&body=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20meu%20evento.";
+
 
 const items: Item[] = [
   {
     icon: MessageCircle,
     title: "WhatsApp",
-    desc: "Resposta rápida",
+   
     href: WHATSAPP,
     aria: "Falar pelo WhatsApp",
     external: true,
@@ -27,25 +27,26 @@ const items: Item[] = [
   {
     icon: Instagram,
     title: "Instagram",
-    desc: "@seuusuario", 
+    
     href: INSTAGRAM,
     aria: "Visitar perfil no Instagram",
     external: true,
   },
-  {
-    icon: MapPin,
-    title: "Região",
-    desc: "São Paulo e região",
-    href: MAP,
-    aria: "Ver localização no mapa",
-    external: true,
-  },
+ 
+ {
+  icon: Mail,
+  title: "Email",
+  href: EMAIL,
+  aria: "Enviar email",
+  external: true,
+},
+
 ];
 
 function ContactIcons() {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-      {items.map(({ icon: Icon, title, desc, href, aria, external }) => (
+      {items.map(({ icon: Icon, title, href, aria, external }) => (
         <a
           key={title}
           href={href}
@@ -66,7 +67,7 @@ function ContactIcons() {
 
           <div className="leading-tight text-white text-center">
             <p className="font-semibold">{title}</p>
-            <p className="text-sm/5 text-white/80">{desc}</p>
+          
           </div>
         </a>
       ))}
@@ -76,7 +77,7 @@ function ContactIcons() {
 
 export default function Contact() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-r from-[#C0361C] to-[#E6551E] py-20 text-white">
+    <section id="contato" className="relative overflow-hidden bg-gradient-to-r from-[#C0361C] to-[#E6551E] py-20 text-white">
      
       <div className="pointer-events-none absolute -left-16 -top-16 h-48 w-48 rounded-full bg-white/10 blur-sm" />
       <div className="pointer-events-none absolute -right-10 bottom-10 h-36 w-36 rounded-full bg-white/10 blur-sm" />
@@ -94,31 +95,7 @@ export default function Contact() {
         <ContactIcons />
 
      
-        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a
-            href={WHATSAPP}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-lg bg-green-600 px-5 py-3 font-medium
-                       transition hover:scale-[1.02] hover:bg-green-500"
-          >
-            <MessageCircle className="h-5 w-5" />
-            Fale no WhatsApp
-          </a>
-
-          <a
-            href={INSTAGRAM}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-lg border border-white/30 bg-white/10 px-5 py-3 font-medium
-                       transition hover:bg-white/15"
-          >
-            <Instagram className="h-5 w-5" />
-            Visitar Instagram
-          </a>
-
         
-        </div>
       </div>
     </section>
   );

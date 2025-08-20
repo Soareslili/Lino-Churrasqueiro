@@ -1,18 +1,26 @@
-import Buffet from '../assets/Buffet Completo.png';
-import Evento from '../assets/Evento de Casamento.png';
-import Momentos from '../assets/Momentos Especiais.png';
-import Carne from '../assets/Carne premium.png'
+import Buffet from '../assets/Buffet Completo.jpg';
+import Evento from '../assets/Evento de Casamento.jpg';
+import Aniversario from '../assets/Meu trabalho.jpg';
+import Carne from '../assets/Carne-premium.jpg'
+import Almoco from '../assets/Almoco.jpg';
+import Confratenizacao from '../assets/Confraternizacao.jpg';
+import Melhorchurrasco from '../assets/Melhor Churrasqueiro.jpg';
+import Lino from '../assets/Lino Churrasqueiro.jpg'
 
 export default function Gallery() {
   const trabalhos = [
-    { img: Momentos, title: 'Momentos Especiais' },
+    { img: Aniversario, title: 'Aniversario' },
     { img: Evento, title: 'Evento de Casamento' },
     { img: Buffet, title: 'Buffet Completo' },
      { img: Carne, title: 'Carne Premium ' },
+     { img: Almoco, title: 'Almoço de Família' },
+     { img: Confratenizacao, title: 'Confraternização' },
+     { img: Melhorchurrasco, title: 'Melhor Churrasco' },
+     { img: Lino, title: 'Lino Churrasqueiro' },
   ];
 
   return (
-    <section className="bg-[#f5f3ef] py-20">
+    <section id='galeria' className="bg-[#f5f3ef] py-20">
       <div className="container mx-auto h-full px-4">
         <div>
           <h2 id="gallery" className="text-5xl font-bold text-center mb-8">

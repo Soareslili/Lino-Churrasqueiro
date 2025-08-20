@@ -3,7 +3,7 @@
 
 export default function Service() {
     return (
-        <section className="py-20 bg-[#f5f3ef]">
+        <section id="servicos" className="py-20 bg-[#f5f3ef]">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16 animate-fade-in">
                     <h2 className="font-display font-bold text-4xl md:text-5xl text-foreground mb-6">
@@ -37,7 +37,7 @@ export default function Service() {
                         </h3>
 
                       
-                        <p className="text-lg text-gray-500 mb-6">
+                        <p className="text-sm text-gray-500 mb-6">
                             Carnes nobres, acompanhamentos tradicionais e temperos especiais para uma experiência autêntica.
                         </p>
 

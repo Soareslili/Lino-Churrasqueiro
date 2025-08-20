@@ -59,7 +59,7 @@ export function Testimmonials() {
 
     return (
 
-        <section className="bg-[#f5f3ef] py-20">
+        <section id="depoimento" className="bg-[#f5f3ef] py-20">
             <div className="text-center mb-16">
                 <h2 id="testimony" className="font-display font-bold text-4xl md:text-5xl text-foreground mb-6">O que nossos clientes dizem</h2>
                 <p className="text-lg text-gray-500">A satisfação dos nossos clientes é nossa maior recompensa.</p>

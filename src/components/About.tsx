@@ -1,9 +1,9 @@
 
-import Lino from '../assets/Churrasqueiro.png'
+import Lino from '../assets/Lino.jpg'
 
 export default function About() {
     return (
-        <section className="py-20 bg-gradient-smoke ml-10">
+        <section id='sobre' className="py-20 bg-gradient-smoke ml-10">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
 
@@ -20,7 +20,7 @@ export default function About() {
                         data-aos-delay="200"
                         data-aos-duration="1200"
                     >
-                        Com mais de 10 anos de experiência, Lino transforma qualquer evento em um verdadeiro festival de sabores.
+                        Com mais de 40 anos de experiência, Lino transforma qualquer evento em um verdadeiro festival de sabores.
                         Atende aniversários, casamentos, confraternizações e muito mais.
                     </p>
 
@@ -32,7 +32,7 @@ export default function About() {
                         >
                             <div className="w-2 h-2 bg-red-600 rounded-full"></div>
                             <span className="text-foreground font-medium">
-                                Experiência comprovada há mais de 10 anos
+                                Experiência comprovada há mais de 40 anos
                             </span>
                         </div>
 
@@ -65,7 +65,7 @@ export default function About() {
                     <img
                         src={Lino}
                         alt="Cliente satisfeito"
-                        className="rounded-lg shadow-lg max-w-full"
+                        className="rounded-lg shadow-lg mx-2.5 mr-20 w-64 md:w-90"
                     />
                 </div>
 
