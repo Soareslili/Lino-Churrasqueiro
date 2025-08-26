@@ -1,6 +1,6 @@
 import Buffet from '../assets/Buffet Completo.jpg';
 import Evento from '../assets/Evento de Casamento.jpg';
-import Aniversario from '../assets/Meu trabalho.jpg';
+import MeuTrabalho from '../assets/Meu trabalho.jpg';
 import Carne from '../assets/Carne-premium.jpg'
 import Almoco from '../assets/Almoco.jpg';
 import Confratenizacao from '../assets/Confraternizacao.jpg';
@@ -9,7 +9,7 @@ import Lino from '../assets/Lino Churrasqueiro.jpg'
 
 export default function Gallery() {
   const trabalhos = [
-    { img: Aniversario, title: 'Aniversario' },
+    { img: MeuTrabalho, title: 'Meu Trabalho' },
     { img: Evento, title: 'Evento de Casamento' },
     { img: Buffet, title: 'Buffet Completo' },
      { img: Carne, title: 'Carne Premium ' },

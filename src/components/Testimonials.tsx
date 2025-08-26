@@ -2,7 +2,7 @@ import { useEffect, useCallback, useState } from "react"
 import useEmblaCarousel from "embla-carousel-react";
 
 import Cliente1 from '../assets/Cliente1.jpeg'
-import Cliente2 from '../assets/Cliente2.avif'
+import Cliente2 from '../assets/Cliente2.jpg'
 import Cliente3 from '../assets/Cliente3.jpg'
 
 
@@ -18,15 +18,15 @@ const testimonials = [
     {
         img: Cliente2,
         message: "Excelente serviço! O Lino e sua equipe superaram todas as expectativas. A carne estava no ponto perfeito e o atendimento impecável.",
-        name: 'Roberto L.',
-        descript: 'Reunião de família '
+        name: 'Fabiano F',
+        descript: 'Anirversário'
         
     },
     {
         img: Cliente3,
         message: "Serviço de primeira qualidade! O Lino é muito atencioso e faz questão de que tudo saia perfeito. Voltaremos a contratar com certeza.",
-        name: 'Fernada M.',
-        descript: 'Confratenização da empresa'
+        name: 'Lidiane Santos',
+        descript: 'Almoço de família'
         
     },
 
@@ -70,7 +70,7 @@ export function Testimmonials() {
                         {testimonials.map((t, idx) => (
                             <div className="min-w-0 flex-[0_0_100%] flex justify-center px-4 " key={idx}>
                                 <blockquote className="bg-white p-8 rounded-lg shadow-[0_6px_30px_rgba(255,165,0,0.25)] text-center">
-                                   <img src={t.img} alt={`Foto de ${t.name}`} className="w-30 h-30 rounded-full mx-auto mb-4" />
+                                   <img src={t.img} alt={`Foto de ${t.name}`} className="w-40 h-40 rounded-full mx-auto mb-4" />
                                     <p className="text-gray-800 text-lg mb-6 italic leading-relaxed">{t.message}</p>
                                     <footer className=" flex flex-col gap-1.5">
                                         <span className="text-gray-800 font-bold text-xl ">{t.name}</span>
