@@ -5,12 +5,12 @@ import "./index.css";
 
 
 import { useEffect } from "react";
-import AOS from "aos";
+import  AOS from "aos";
 import "aos/dist/aos.css";
 import Gallery from "./components/Galery";
-import { Testimmonials } from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { Testimonials } from "./components/Testimonials";
 
 function App() {
 
@@ -28,7 +28,7 @@ function App() {
       <About />
       <Service/>
       <Gallery/>
-      <Testimmonials/>
+     <Testimonials/>
       <Contact/>
       <Footer/>
     </>
