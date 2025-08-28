@@ -1,29 +1,47 @@
 import { useEffect, useCallback, useState } from "react"
 import useEmblaCarousel from "embla-carousel-react";
 
-import Cliente1 from '../assets/Cliente1.jpeg'
-import Cliente2 from '../assets/Cliente2.jpg'
-import Cliente3 from '../assets/Cliente3.jpg'
+import Katia from '../assets/Katia.jpg'
+import Fabiano from '../assets/Fabiano.jpg'
+import Lidiane from '../assets/Lidane.jpg'
+import Carol from '../assets/Carol.jpg'
+import Ketelyn from '../assets/Kety.jpg'
 
 
 const testimonials = [
 
     {
-        img: Cliente1,
-        message: "O Lino fez o churrasco do nosso casamento e foi incrível! Profissional, pontual e comida maravilhosa! Todos os convidados elogiaram.",
-        name: 'João Oliveira',
-        descript: 'Casamanto'
+        img: Katia,
+        message: "Recomendo sem pensar duas vezes, equipe maravilhosa, serviço impecável!!!! Comida nota 10, pontualidade e limpeza excelentes!",
+        name: 'Katia rufino',
+        descript: 'Almoço de Família'
+       
+    },
+
+    {
+        img: Ketelyn,
+        message: "Tive a oportunidade de contar com o trabalho do churrasqueiro Lino e só tenho elogios. Extremamente profissional, pontual e organizado, ele cuida de todos os detalhes para que o churrasco seja perfeito. A qualidade das carnes, o ponto de preparo e o cuidado no atendimento fazem toda a diferença. Além de assar com maestria, Lino tem um carisma enorme, o que deixa o ambiente ainda mais agradável para os convidados.",
+        name: 'Ketellyn Silva',
+        descript: 'Aniversário de 15 anos'
+       
+    },
+
+    {
+        img: Carol,
+        message: " Gostaria de agradecer pelo ótimo serviço, muito solicito, muito prestativo, me ajudou com muitas indicações de quantidade, média de valores, todos elogiaram muito o churrasco, estava tudo maravilhoso",
+        name: 'Carol',
+        descript: 'Aniversário'
        
     },
     {
-        img: Cliente2,
+        img: Fabiano,
         message: "Excelente serviço! O Lino e sua equipe superaram todas as expectativas. A carne estava no ponto perfeito e o atendimento impecável.",
         name: 'Fabiano F',
         descript: 'Anirversário'
         
     },
     {
-        img: Cliente3,
+        img: Lidiane,
         message: "Serviço de primeira qualidade! O Lino é muito atencioso e faz questão de que tudo saia perfeito. Voltaremos a contratar com certeza.",
         name: 'Lidiane Santos',
         descript: 'Almoço de família'
@@ -70,7 +88,7 @@ export function Testimmonials() {
                         {testimonials.map((t, idx) => (
                             <div className="min-w-0 flex-[0_0_100%] flex justify-center px-4 " key={idx}>
                                 <blockquote className="bg-white p-8 rounded-lg shadow-[0_6px_30px_rgba(255,165,0,0.25)] text-center">
-                                   <img src={t.img} alt={`Foto de ${t.name}`} className="w-40 h-40 rounded-full mx-auto mb-4" />
+                                   <img src={t.img} alt={`Foto de ${t.name}`} className="w-35 h-35 rounded-full mx-auto mb-4" />
                                     <p className="text-gray-800 text-lg mb-6 italic leading-relaxed">{t.message}</p>
                                     <footer className=" flex flex-col gap-1.5">
                                         <span className="text-gray-800 font-bold text-xl ">{t.name}</span>
